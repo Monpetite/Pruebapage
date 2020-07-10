@@ -182,17 +182,19 @@
 
                 <!--LightCase-->
 
-                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
-                </script>
-                <script type="text/javascript" src="lightcase-2.5.0/src/js/lightcase.js"></script>
-                <script>
-                        $(document).ready(function () {
-                                $('a[data-rel^=lightcase]').lightcase({
-                                        showSequenceInfo: false,
-                                        showTitle: false
-                                });
-                        });
-                </script>
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+                 <script type="text/javascript" src="lightcase-2.5.0/src/js/lightcase.js"></script>
+                 <script type="text/javascript" src="lightcase-2.5.0/vendor/jQuery/jquery.events.touch.js"></script>
+                 <script>
+                 $(document).ready(function () {
+                          $('a[data-rel^=lightcase]').lightcase({
+                                          showSequenceInfo: false,
+                                          showTitle: false,
+                                          swipe: true,
+                                          fullScreenModeForMobile:true
+            });
+    });
+  </script>
 
         </body>
 
